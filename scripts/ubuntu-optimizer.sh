@@ -1,5 +1,5 @@
 #!/bin/bash
-# https://github.com/hawshemi/Linux-Optimizer
+# https://github.com/DanielNoohi/Linux-Optimizer
 
 
 # Green, Yellow & Red Messages.
@@ -186,7 +186,7 @@ sysctl_optimizations() {
     sleep 0.5
 
     # Replace the new sysctl.conf file.
-    wget "https://raw.githubusercontent.com/hawshemi/Linux-Optimizer/main/files/sysctl.conf" -q -O $SYS_PATH 
+    wget "https://raw.githubusercontent.com/DanielNoohi/Linux-Optimizer/main/files/sysctl.conf" -q -O $SYS_PATH 
 
     sysctl -p
     echo 
@@ -325,7 +325,7 @@ limits_optimizations() {
 
 
     # Update the limits.conf
-    wget "https://raw.githubusercontent.com/hawshemi/Linux-Optimizer/main/files/limits.conf" -q -O $LIM_PATH
+    wget "https://raw.githubusercontent.com/DanielNoohi/Linux-Optimizer/main/files/limits.conf" -q -O $LIM_PATH
 
     echo 
     green_msg 'System Limits are Optimized.'
