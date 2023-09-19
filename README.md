@@ -4,7 +4,7 @@
 ### It performs the following tasks:
     
     
-1. Set the server TimeZone to Asia/Tehran.
+1. Set the server TimeZone to Europe/Berlin.
     
 
 2. Update, Upgrade, and Clean the server:
