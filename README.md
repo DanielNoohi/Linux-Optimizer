@@ -61,7 +61,7 @@
     
     
 12. Optimize `UFW` & Open Common Ports.
-    - Open Ports `21`, `22`, `80`, `443`.
+    - Open Port `22`.
     - With `IPv6`, `TCP` & `UDP`.
 
     
