@@ -71,14 +71,13 @@ ask_reboot() {
 # Timezone
 set_timezone() {
     echo 
-    yellow_msg 'Setting TimeZone to Asia/Tehran.'
+    yellow_msg 'Setting TimeZone to Europe/Berlin.'
     echo
     sleep 0.5
 
-    timedatectl set-timezone Asia/Tehran
-
+    timedatectl set-timezone Europe/Berlin
     echo 
-    green_msg 'TimeZone set to Asia/Tehran.'
+    green_msg 'TimeZone set to Europe/Berlin.'
     echo
     sleep 0.5
 }
