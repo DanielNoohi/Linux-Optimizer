@@ -71,14 +71,14 @@ ask_reboot() {
 # Timezone
 set_timezone() {
     echo 
-    yellow_msg 'Setting TimeZone to Asia/Tehran.'
+    yellow_msg 'Setting TimeZone to Europe/Berlin.'
     echo
     sleep 0.5
 
-    timedatectl set-timezone Asia/Tehran
+    timedatectl set-timezone Europe/Berlin
 
     echo 
-    green_msg 'TimeZone set to Asia/Tehran.'
+    green_msg 'TimeZone set to Europe/Berlin.'
     echo
     sleep 0.5
 }
@@ -352,14 +352,14 @@ ufw_optimizations() {
     sudo ufw disable
 
     # Open default ports.
-    sudo ufw allow 21
-    sudo ufw allow 21/udp
-    sudo ufw allow 22
-    sudo ufw allow 22/udp
-    sudo ufw allow 80
-    sudo ufw allow 80/udp
-    sudo ufw allow 443
-    sudo ufw allow 443/udp
+    #sudo ufw allow 21
+    #sudo ufw allow 21/udp
+    sudo ufw allow 22 comment 'Allow SSH Access'
+    sudo ufw allow 22/udp comment 'Allow SSH UDP Access'
+    #sudo ufw allow 80
+    #sudo ufw allow 80/udp
+    #sudo ufw allow 443
+    #sudo ufw allow 443/udp
     sleep 0.5
 
     # Change the UFW config to use System config.
