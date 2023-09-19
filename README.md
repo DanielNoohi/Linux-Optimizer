@@ -96,7 +96,7 @@ wget "https://github.com/DanielNoohi/Linux-Optimizer/blob/main/linux-optimizer.s
 
 
 ## Menu Image
-<img width="481" title="Menu" alt="Menu" src="https://github.com/DanielNoohi/Linux-Optimizer/assets/16742123/64847a99-4efe-4d28-aec1-6d08a7fee335">
+<img width="481" title="Menu" alt="Menu" src="https://github.com/hawshemi/Linux-Optimizer/assets/16742123/64847a99-4efe-4d28-aec1-6d08a7fee335">
 
 
 ## Disclaimer
