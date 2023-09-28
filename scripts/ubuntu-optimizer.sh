@@ -351,14 +351,14 @@ ufw_optimizations() {
     sudo ufw disable
 
     # Open default ports.
-    sudo ufw allow 21
-    sudo ufw allow 21/udp
-    sudo ufw allow 22
-    sudo ufw allow 22/udp
-    sudo ufw allow 80
-    sudo ufw allow 80/udp
-    sudo ufw allow 443
-    sudo ufw allow 443/udp
+    #sudo ufw allow 21
+    #sudo ufw allow 21/udp
+    sudo ufw allow 22 comment 'Allow SSH Access'
+    sudo ufw allow 22/udp comment 'Allow SSH/UDP Access'
+    sudo ufw allow 80 comment 'Allow HTTP Access'
+    sudo ufw allow 80/udp comment 'Allow HTTP/UDP Access'
+    sudo ufw allow 443 comment 'Allow HTTPS Access'
+    sudo ufw allow 443/udp comment 'Allow HTTPS/UDP Access'
     sleep 0.5
 
     # Change the UFW config to use System config.
